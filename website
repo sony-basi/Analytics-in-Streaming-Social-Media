@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - [Dein Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #113aac;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #113aac;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>[Dein Name]</h1>
+        <p>Web Development Engineer</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Kontaktinformationen</h2>
+            <p>E-Mail: [Deine E-Mail]</p>
+            <p>Telefon: [Deine Telefonnummer]</p>
+            <p>Adresse: [Deine Adresse]</p>
+            <p>LinkedIn: <a href="[Dein LinkedIn-Profil]" target="_blank">[Dein LinkedIn-Profil]</a></p>
+        </section>
+        <section>
+            <h2>Berufserfahrung</h2>
+            <ul>
+                <li>
+                    <strong>Web Development Engineer</strong><br>
+                    <em>Firmenname, Standort</em><br>
+                    [Startdatum] - [Enddatum]<br>
+                    - Beschreibung deiner Aufgaben und Erfolge
+                </li>
+                <li>
+                    <strong>Weitere Position</strong><br>
+                    <em>Firmenname, Standort</em><br>
+                    [Startdatum] - [Enddatum]<br>
+                    - Beschreibung deiner Aufgaben und Erfolge
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Ausbildung</h2>
+            <ul>
+                <li>
+                    <strong>Studiengang</strong><br>
+                    <em>Hochschule, Standort</em><br>
+                    [Abschlussjahr]
+                </li>
+                <li>
+                    <strong>Weiterer Abschluss</strong><br>
+                    <em>Hochschule, Standort</em><br>
+                    [Abschlussjahr]
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Fähigkeiten</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Frameworks wie React oder Angular</li>
+                <li>Backend-Technologien wie Node.js oder Python</li>
+                <li>Versionierung mit Git</li>
+                <li>Agile Methoden</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Sprachen</h2>
+            <ul>
+                <li>Deutsch - Muttersprache</li>
+                <li>Englisch - Fließend</li>
+                <li>Spanisch - Fortgeschritten</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Zertifikate</h2>
+            <ul>
+                <li>Zertifikat für fortgeschrittene Webentwicklung</li>
+                <li>Agile Project Management Zertifikat</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
