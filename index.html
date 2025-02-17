@@ -3,102 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - xxx</title>
+    <title>Resume - [Dein Name]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background-color: #113aac;
+            background: linear-gradient(135deg, #113aac, #1e88e5);
             color: white;
             text-align: center;
-            padding: 2em 0;
+            padding: 3em 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 0.5em 0 0;
         }
         .container {
             width: 80%;
+            max-width: 1000px;
             margin: 20px auto;
             background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        h1, h2 {
+        h2 {
+            font-family: 'Montserrat', sans-serif;
             color: #113aac;
+            margin-bottom: 1em;
+            border-bottom: 2px solid #113aac;
+            display: inline-block;
+            padding-bottom: 5px;
         }
         section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "•";
+            color: #113aac;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        a {
+            color: #1e88e5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #113aac;
+        }
+        .icon {
+            margin-right: 10px;
+            color: #113aac;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .skills-grid li {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .languages {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .languages li {
+            background-color: #f4f4f9;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>xxx</h1>
+        <h1>[Dein Name]</h1>
         <p>Analytics in Streaming & Social Media</p>
     </header>
     <div class="container">
         <section>
-            <h2>Kontakt</h2>
-            <p>E-Mail: [Deine E-Mail]</p>
-            <p>Telefon: [Deine Telefonnummer]</p>
-            <p>LinkedIn: <a href="[Dein LinkedIn-Profil]" target="_blank">[Dein LinkedIn-Profil]</a></p>
+            <h2><i class="fas fa-envelope icon"></i> Kontakt</h2>
+            <p><i class="fas fa-envelope icon"></i> E-Mail: [Deine E-Mail]</p>
+            <p><i class="fas fa-phone icon"></i> Telefon: [Deine Telefonnummer]</p>
+            <p><i class="fab fa-linkedin icon"></i> LinkedIn: <a href="[Dein LinkedIn-Profil]" target="_blank">[Dein LinkedIn-Profil]</a></p>
         </section>
         <section>
-            <h2><a href="https://genius.com" target="_blank">Genius.com</a></h2>
+            <h2><i class="fas fa-briefcase icon"></i> Berufserfahrung</h2>
             <ul>
                 <li>
                     <strong>Web Development Engineer</strong><br>
-                    <em>Firmenname, Standort</em><br>
+                    <em>Genius.com, Remote</em><br>
                     [Startdatum] - [Enddatum]<br>
-                    - Beschreibung deiner Aufgaben und Erfolge
+                    - Entwicklung von Datenvisualisierungs-Tools für Streaming-Analytics.<br>
+                    - Implementierung von Social-Media-Integrationen.<br>
+                    - Zusammenarbeit mit Data Scientists zur Optimierung von Algorithmen.
                 </li>
             </ul>
         </section>
         <section>
-            <h2>Ausbildung</h2>
+            <h2><i class="fas fa-graduation-cap icon"></i> Ausbildung</h2>
             <ul>
                 <li>
-                    <strong>Studiengang</strong><br>
+                    <strong>Bachelor in Informatik</strong><br>
                     <em>Hochschule, Standort</em><br>
                     [Abschlussjahr]
                 </li>
                 <li>
-                    <strong>Weiterer Abschluss</strong><br>
-                    <em>Hochschule, Standort</em><br>
+                    <strong>Zertifikat in Data Analytics</strong><br>
+                    <em>Online-Kurs, Anbieter</em><br>
                     [Abschlussjahr]
                 </li>
             </ul>
         </section>
         <section>
-            <h2>Fähigkeiten</h2>
-            <ul>
+            <h2><i class="fas fa-tools icon"></i> Fähigkeiten</h2>
+            <ul class="skills-grid">
                 <li>HTML, CSS, JavaScript</li>
-                <li>Frameworks wie React oder Angular</li>
-                <li>Backend-Technologien wie Node.js oder Python</li>
-                <li>Versionierung mit Git</li>
+                <li>React & Angular</li>
+                <li>Node.js & Python</li>
+                <li>Datenvisualisierung (D3.js)</li>
+                <li>SQL & NoSQL</li>
+                <li>Git & GitHub</li>
                 <li>Agile Methoden</li>
+                <li>Social-Media-Analytics</li>
             </ul>
         </section>
         <section>
-            <h2>Sprachen</h2>
-            <ul>
-                <li>Deutsch - 5</li>
-                <li>Englisch - 4.5</li>
+            <h2><i class="fas fa-language icon"></i> Sprachen</h2>
+            <ul class="languages">
+                <li>Deutsch (Muttersprache)</li>
+                <li>Englisch (Fließend)</li>
+                <li>Französisch (Grundkenntnisse)</li>
             </ul>
         </section>
         <section>
-            <h2>???</h2>
+            <h2><i class="fas fa-star icon"></i> Interessen</h2>
             <ul>
-                <li>!!!</li>
+                <li>Musikstreaming & Plattformanalysen</li>
+                <li>Data Storytelling</li>
+                <li>Social-Media-Trends</li>
             </ul>
         </section>
     </div>
