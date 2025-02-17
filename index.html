@@ -103,6 +103,42 @@
             border-radius: 5px;
             font-weight: 600;
         }
+        .collapsible {
+            background-color: #f4f4f9;
+            color: #113aac;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .collapsible:hover {
+            background-color: #e0e0e7;
+        }
+        .collapsible::after {
+            content: '\002B'; /* Pluszeichen */
+            color: #113aac;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        .collapsible.active::after {
+            content: '\2212'; /* Minuszeichen */
+        }
+        .content {
+            padding: 0 15px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -173,6 +209,58 @@
                 <li>Social-Media-Trends</li>
             </ul>
         </section>
+
+        <!-- Ausklappbare Abschnitte -->
+        <section>
+            <button type="button" class="collapsible">Projekte</button>
+            <div class="content">
+                <ul>
+                    <li>
+                        <strong>Streaming-Datenanalyse</strong><br>
+                        - Analyse von Nutzerdaten aus Musikstreaming-Plattformen.<br>
+                        - Erstellung von Dashboards zur Visualisierung von Trends.
+                    </li>
+                    <li>
+                        <strong>Social-Media-Monitoring</strong><br>
+                        - Entwicklung von Tools zur Überwachung von Social-Media-Aktivitäten.<br>
+                        - Identifikation von viralen Trends.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <button type="button" class="collapsible">Zertifikate</button>
+            <div class="content">
+                <ul>
+                    <li>
+                        <strong>Google Data Analytics</strong><br>
+                        <em>Google, Online</em><br>
+                        [Abschlussjahr]
+                    </li>
+                    <li>
+                        <strong>Social Media Marketing</strong><br>
+                        <em>Coursera, Online</em><br>
+                        [Abschlussjahr]
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
+
+    <script>
+        // JavaScript für die Ausklappfunktion
+        const collapsibles = document.querySelectorAll(".collapsible");
+        collapsibles.forEach((collapsible) => {
+            collapsible.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
