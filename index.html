@@ -139,6 +139,20 @@
             background-color: white;
             border-radius: 5px;
         }
+                .custom-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+        .custom-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .custom-list li i {
+            margin-right: 8px;
+            color: #113aac;
+        }
     </style>
 </head>
 <body>
@@ -154,16 +168,18 @@
         </section>
         <section>
             <h2><i class="fas fa-briefcase icon"></i> Ehrenamt</h2>
-            <ul>
-                <li>
-                    <strong><a href="https://genius.com/basi" target="_blank">Genius.com</a></strong><br>
-                    <em>20h bis 60h pro Woche</em><br>
-                    März 2023 bis Jan. 2025<br>
-                    - Entwicklung von Datenvisualisierungs-Tools für Streaming-Analytics.<br>
-                    - Implementierung von Social-Media-Integrationen.<br>
-                    - Zusammenarbeit mit Data Scientists zur Optimierung von Algorithmen.
-                </li>
-            </ul>
+        <ul>
+            <li>
+                <strong><a href="https://genius.com/basi" target="_blank">Genius.com</a></strong><br>
+                <em>20h bis 60h pro Woche</em><br>
+                März 2023 bis Jan. 2025
+                <ul class="custom-list">
+                    <li><i class="fas fa-chart-line"></i> Entwicklung von Datenvisualisierungs-Tools für Streaming-Analytics</li>
+                    <li><i class="fas fa-share-alt"></i> Implementierung von Social-Media-Integrationen</li>
+                    <li><i class="fas fa-brain"></i> Zusammenarbeit mit Data Scientists zur Optimierung von Algorithmen</li>
+                </ul>
+            </li>
+        </ul>
         </section>
         <section>
             <h2><i class="fas fa-graduation-cap icon"></i> Studium</h2>
